@@ -24,3 +24,4 @@
 
 ### Steps
 1. Compile C++ code:
+- `g++ -x c++ -std=c++11 -o ./bin/getstructure ./structures_mb/GetStructure.cpp`
