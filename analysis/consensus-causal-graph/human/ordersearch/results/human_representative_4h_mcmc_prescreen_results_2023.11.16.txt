@@ -1,0 +1,37 @@
+What is the location of the configuration file that you edited?: 
+Configuration file correctly opened
+What is the name of your file?: /home/samanthagonzales/zinc_aging/analysis/consensus-causal-graph/human/ordersearch/input/human_representative.txt
+
+How many variables in your data file?: 52
+
+Data file correctly opened
+What is the name of the file containing prior information? (If none put NONE) NONE
+
+
+
+What is the maximum categorical value of each variable?: 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 
+
+What is the minimum categorical value of each variable?: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+Amount of Categories for each variable: 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 
+
+
+How long would you like the program to run (in whole hours)?: 4
+
+What is the maximum amount of parents to be considered for any given variable?: 4
+
+What is the epsilon difference value that you would like to use?: 9.9999999999999995e-07
+
+Would you like to designate a starting order? [Y/n] Y
+The specified starting order: 33 24 15 48 36 11 20 21 29 38 43 45 34 28 51 30 5 2 17 46 42 1 39 9 49 25 10 47 8 7 6 22 44 12 16 4 32 50 37 3 26 0 35 14 19 27 40 18 41 23 13 31 
+
+
+The local date and time is: Thu Nov 16 14:38:25 2023
+
+The local date and time is: Thu Nov 16 19:49:08 2023
+
+
+The total amount of unique iterations in the allotted time was: 2
+
+33 19 15 48 36 11 20 21 29 38 43 45 34 28 51 30 5 2 17 46 42 1 39 9 49 25 10 47 8 7 6 22 44 12 16 4 32 50 37 3 26 0 35 14 24 27 40 18 41 23 13 31       -836.6151463499757      {                   }      0.56562057379341335
+33 24 15 48 36 11 20 21 29 38 43 45 34 28 51 30 5 2 17 46 42 1 39 9 49 25 10 47 8 7 6 22 44 12 16 4 32 50 37 3 26 0 35 14 19 27 40 18 41 23 13 31       -836.87915143296641      {0.56562057379341335}

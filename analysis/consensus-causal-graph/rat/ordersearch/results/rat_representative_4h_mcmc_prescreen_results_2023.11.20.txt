@@ -1,0 +1,44 @@
+What is the location of the configuration file that you edited?: 
+Configuration file correctly opened
+What is the name of your file?: /home/samanthagonzales/zinc_aging/analysis/consensus-causal-graph/rat/ordersearch/input/rat_representative.txt
+
+How many variables in your data file?: 31
+
+Data file correctly opened
+What is the name of the file containing prior information? (If none put NONE) NONE
+
+
+
+What is the maximum categorical value of each variable?: 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 
+
+What is the minimum categorical value of each variable?: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+Amount of Categories for each variable: 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 
+
+
+How long would you like the program to run (in whole hours)?: 4
+
+What is the maximum amount of parents to be considered for any given variable?: 4
+
+What is the epsilon difference value that you would like to use?: 9.9999999999999995e-07
+
+Would you like to designate a starting order? [Y/n] Y
+The specified starting order: 25 1 23 24 15 16 4 21 11 20 6 2 10 28 12 29 0 7 17 5 19 18 26 3 27 8 9 22 13 14 30 
+
+
+The local date and time is: Mon Nov 20 16:13:08 2023
+
+The local date and time is: Mon Nov 20 20:18:29 2023
+
+
+The total amount of unique iterations in the allotted time was: 107
+
+24 30 26 14 5 20 6 18 2 27 11 13 19 22 10 21 1 12 4 16 8 17 29 0 28 3 15 9 23 7 25       -234.60738867144445      {                   }      0.61612642861715827
+24 30 26 14 5 20 6 18 2 27 11 13 19 22 10 21 1 12 4 16 8 17 29 15 28 3 0 9 23 7 25       -235.08052759799506      {0.61612642861715827}      0.17834484262039496
+24 30 26 14 5 20 6 18 2 27 11 13 19 22 10 21 1 12 23 16 8 17 29 0 28 3 15 9 4 7 25       -235.47517657847547      {0.79447127123755323}      0.13073515509687028
+4 30 26 14 5 20 6 18 2 27 11 13 19 22 10 21 1 12 24 16 8 17 29 0 28 3 15 9 23 7 25       -236.40829203148132      {0.92520642633442352}      0.0073577581509650658
+4 30 26 14 5 20 6 18 2 27 11 19 13 22 10 21 1 12 24 16 8 17 29 0 28 3 15 9 23 7 25       -236.44203043568453      {0.93256418448538858}      0.048042645096089576
+26 14 2 20 6 5 18 27 11 15 1 22 10 21 13 19 24 16 8 17 29 0 28 3 12 9 23 7 25 4 30       -237.66870205102478      {0.98060682958147816}      0.0053144720244958643
+26 14 2 20 6 5 18 27 11 15 1 22 10 21 13 12 24 16 8 17 29 0 28 3 19 9 23 7 25 4 30       -237.97478136859993      {0.98592130160597402}      0.0025224693213223848
+26 24 27 20 6 15 18 2 11 5 1 22 10 21 13 17 28 16 8 29 19 0 14 3 12 4 23 25 7 9 30       -238.16059614498687      {0.98844377092729641}      0.0020320900711142675
+26 24 27 20 6 5 18 2 11 15 1 22 10 21 13 19 14 16 8 17 29 0 28 3 12 4 23 7 25 9 30       -238.3444214431762      {0.99047586099841067}
