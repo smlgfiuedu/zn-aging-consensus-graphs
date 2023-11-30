@@ -6,16 +6,16 @@
 <u>Repository</u>: https://github.com/smlgfiuedu/Order-Score
 ### Steps
 1. Compile C++ code: 
-- `g++ -x c++ -std=c++11 -o ./bin/mcmc_prescreen ./order_score/MCMC_PrescreeningSwap.cpp`
+	- `g++ -x c++ -std=c++11 -o ./bin/mcmc_prescreen ./order_score/MCMC_PrescreeningSwap.cpp`
 
 2. Preprocess input `human_representative.txt` 
-- [[0_convert_data_human.R]]
+	- [[0_convert_data_human.R]]
 
 3. Generate configuration file `human_representative.4h.preprior.config`
-- [[1_generate_config_human.R]]
+	- [[1_generate_config_human.R]]
 
 4. Run `mcmc_prescreen`:
-- [[2_run_ordersearch_prescreen_human.sh]]
+	- [[run_ordersearch_prescreen_human.sh]]
 
 # Get Structures
 *Determine the best structures derived from the highest scoring order from Order Search.*
@@ -24,4 +24,15 @@
 
 ### Steps
 1. Compile C++ code:
-- `g++ -x c++ -std=c++11 -o ./bin/getstructure ./structures_mb/GetStructure.cpp`
+	- `g++ -x c++ -std=c++11 -o ./bin/getstructure ./structures_mb/GetStructure.cpp`
+
+2.  Generate configuration file `human_representative.structmb.config`
+	- [[2_generate_struct_config_human.R]]
+
+3. Run `getstructure`
+	- [[run_structures_human.sh]]
+
+# Generate Consensus Causal Graph
+*Generate a consensus network graph based on the best structures from Structures and MB*
+
+<u>Repository:</u> https://github.com/smlgfiuedu/Consensus-Graph
