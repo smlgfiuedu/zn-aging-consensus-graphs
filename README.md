@@ -8,10 +8,10 @@
 1. Compile C++ code: 
 	- `g++ -x c++ -std=c++11 -o ./bin/mcmc_prescreen ./order_score/MCMC_PrescreeningSwap.cpp`
 
-2. Preprocess input `human_representative.txt` 
+2. Preprocess input **human_representative.txt**
 	- [[0_convert_data_human.R]]
 
-3. Generate configuration file `human_representative.4h.preprior.config`
+3. Generate configuration file **human_representative.4h.preprior.config**
 	- [[1_generate_config_human.R]]
 
 4. Run `mcmc_prescreen`:
@@ -26,7 +26,7 @@
 1. Compile C++ code:
 	- `g++ -x c++ -std=c++11 -o ./bin/getstructure ./structures_mb/GetStructure.cpp`
 
-2.  Generate configuration file `human_representative.structmb.config`
+2.  Generate configuration file **human_representative.structmb.config**
 	- [[2_generate_struct_config_human.R]]
 
 3. Run `getstructure`
