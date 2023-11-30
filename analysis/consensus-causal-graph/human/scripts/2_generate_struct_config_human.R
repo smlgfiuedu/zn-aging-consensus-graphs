@@ -18,3 +18,4 @@ generateStructConfig(configFile = structmb.config.out, data = data,
                              DataFile = sub("\\.", "/home/samanthagonzales/zinc_aging", data.in),
                              Order = best.order,
                              OutputFileName = paste0("/home/samanthagonzales/zinc_aging/consensus-causal-graph/", organism, "/structures/out/", tolower(dataset), "_struct_results.txt"))
+cat("Structures configuration file can be found in", struct.config.out)
