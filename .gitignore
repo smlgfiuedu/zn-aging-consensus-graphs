@@ -1,0 +1,15 @@
+.Rdata
+.Rhistory
+.Rproj.user
+
+manuscript/
+notes/
+papers/
+data/
+results/
+scripts/
+
+# only upload consensus causal graph analysis
+analysis/banjo
+analysis/bnlearn
+analysis/calcprob
