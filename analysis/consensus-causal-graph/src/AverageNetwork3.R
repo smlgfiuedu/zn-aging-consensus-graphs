@@ -1,6 +1,6 @@
 #source("/home/zgong001/Documents/Alarm/D50C9v/RCode/CombineOrders.R")
 getRelation = 
-  function(st = "[6][8][5][7|6:8:5][1|7][3|7:1][4|1][2|4][0|2]"){
+  function(st){
     re = c()
     temstr = substr(st, 2, nchar(st)-1)
     stlist = strsplit(chartr(old = "][", new = "##", temstr), "##")
@@ -24,7 +24,7 @@ getRelation =
   }
 
 creatDataframe = 
-  function(v = c("0", "1","2","3","4","5","6","7","8"), r = 246){
+  function(v, r){
     cn = c()
     co= combn(v,2)
     for(i in 1:ncol(co)){
@@ -47,7 +47,7 @@ creatDataframe =
   }
 
 #---------------------------------------------------------------------------------
-sortStru = function(st = "[5][6][8][7|5:8][1|5:7][3|7:8][2|6:1][4|1][0|2]"){
+sortStru = function(st){
   library(dplyr)
   re = ""
   temstr = substr(st, 2, nchar(st)-1)
@@ -83,9 +83,9 @@ sortStru = function(st = "[5][6][8][7|5:8][1|5:7][3|7:8][2|6:1][4|1][0|2]"){
 }
 
 MB = 
-  function (struc ="[6][8][5][7|6:8:5][3|7][1|7:3][4|1][2|4][0|2]", v ="1"){
+  function (struc, v){
     
-    library(xlsx)
+    library(openxlsx)
     library(bnlearn)
     library(dplyr)
     
@@ -112,7 +112,7 @@ sumTable =
                   "LMNB1"	,"MAPK12",	"NRF1",	"PARP1"	,"PCK2",	"PLA2G4C",	"PPP2R3B",	"VDAC2",	"VDAC3"), 
             exfilename = "/home/zgong001/Documents/Alarm/D1KC9v/D1KC9v BestOrders/Strus_D1KC9v.xlsx"){
     library(bnlearn)
-    library(xlsx)
+    library(openxlsx)
     library(dplyr)
     
     v = as.character(seq(0,length(t)-1),1)
@@ -295,8 +295,11 @@ sumTable =
     
     #    print(totS)
     
-    write.xlsx(sumP, exfilename, sheetName = "Pairs", col.names = TRUE, row.names = TRUE, append = FALSE)
-    write.xlsx(sumpS, exfilename, sheetName = "Pairs-WO", col.names = TRUE, row.names = TRUE, append = TRUE)
+    sum.out <- list(sumP, sumpS)
+    write.xlsx(sum.out, exfilename, sheetName = c("Pairs", "Pairs-WO"), colNames = TRUE, rowNames = TRUE, append = FALSE)
+    
+    # write.xlsx(sumP, exfilename, sheetName = "Pairs", colNames = TRUE, rowNames = TRUE, append = FALSE)
+    # write.xlsx(sumpS, exfilename, sheetName = "Pairs-WO", colNames = TRUE, rowNames = TRUE, append = TRUE)
     
     #    return(sumpS)
     
@@ -307,7 +310,7 @@ sumTable =
 AverageNet = function(pathname = "/home/zgong001/Documents/Projects/Luminal/3/SS/Pairs-A3-Luminal A-A-B.xlsx",
                       outfile = "/home/zgong001/Documents/dot/out.gv"){
   
-  library(xlsx)
+  library(openxlsx)
   
   res <- read.xlsx(pathname, 1)  # read first sheet
   res = na.omit(res)
@@ -344,7 +347,7 @@ AverageNet11 = function(pathname = "/home/zgong001/Documents/Projects/Luminal/3/
                        str = "",
                        outfile = "/home/zgong001/Documents/dot/out.gv"){
   
-  library(xlsx)
+  library(openxlsx)
   library(bnlearn)
   
   res <- read.xlsx(pathname, 1)  # read first sheet
@@ -400,7 +403,7 @@ AverageNet11 = function(pathname = "/home/zgong001/Documents/Projects/Luminal/3/
 ExeAve = function(epathname = "/home/zgong001/Documents/Projects/Luminal/3/SS/Pairs-A3-Luminal A-A-B.xlsx",
                   strfile = "",
                   outfile = "/home/zgong001/Documents/dot/"){
-  library(xlsx)
+  library(openxlsx)
   strs =  read.xlsx(strfile, sheetName = "Structures")  # read first sheet
   strs = na.omit(strs)
   strs = as.data.frame(strs[1:2,1])
@@ -423,7 +426,7 @@ AverageNet21 = function(pathname = "/home/zgong001/Documents/Projects/Luminal/3/
                          str = "",
                          outfile = "/home/zgong001/Documents/dot/out.gv"){
   
-  library(xlsx)
+  library(openxlsx)
   library(bnlearn)
   
   res <- read.xlsx(pathname, 1)  # read first sheet
