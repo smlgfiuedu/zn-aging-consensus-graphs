@@ -17,7 +17,7 @@
 4. Run `mcmc_prescreen`:
 	- [[run_ordersearch_prescreen_human.sh]]
 
-# Get Structures
+## Get Structures
 *Determine the best structures derived from the highest scoring order from Order Search.*
 
 <u>Repository</u>: https://github.com/smlgfiuedu/Structures-and-MB
@@ -32,7 +32,12 @@
 3. Run `getstructure`
 	- [[run_structures_human.sh]]
 
-# Generate Consensus Causal Graph
+## Consensus Causal Graph
 *Generate a consensus network graph based on the best structures from Structures and MB*
 
 <u>Repository:</u> https://github.com/smlgfiuedu/Consensus-Graph
+
+### Steps
+1. Run [[3_generate_consensus_graph_human.R]]
+
+Final output is a pdf file containing the consensus network of a given structure, with edges weighted by the average strength of the relationship between nodes.
