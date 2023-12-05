@@ -40,4 +40,4 @@
 ### Steps
 1. Run [[3_generate_consensus_graph_human.R]]
 
-Final output is a pdf file containing the consensus network of a given structure, with edges weighted by the average strength of the relationship between nodes.
+Final output **./organism/causal_graph/organism_consensus_graph.pdf** is a pdf file containing the consensus network of a given structure, with edges weighted by the average strength of the relationship between nodes.
