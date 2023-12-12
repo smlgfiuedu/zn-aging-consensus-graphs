@@ -156,8 +156,10 @@ sumTable <- function (pathname = "structures.txt", node.names = c(), exfilename 
     sumPS <- as.data.frame(sumPS)
     
     sum.out <- list(sumP, sumPS)
-    write.xlsx(sum.out, exfilename, sheetName = c("Pairs", "Pairs-No-Order"), colNames = TRUE, rowNames = TRUE, append = FALSE)
+    write.xlsx(sum.out, paste0(exfilename, ".xlsx"), sheetName = c("Pairs", "Pairs-No-Order"), colNames = TRUE, rowNames = TRUE, append = FALSE)
     
+    scores.out <- list(StruWithO, sumResults)
+    write.xlsx(scores.out, paste0(exfilename, "_scores.xlsx"), sheetName = c("With-Order", "No-Order"), colNames = TRUE, rowNames = TRUE, append = FALSE)
     return(sum.out)
 }
 
