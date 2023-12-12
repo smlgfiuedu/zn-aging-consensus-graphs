@@ -173,7 +173,7 @@ AverageNetwork <- function(pathname = "structures_consensus.xlsx", sheet.name = 
                         outfile = "out.gv"){
   
   
-  res <- read.xlsx(pathname, sheet = sheet.name)
+  res <- read.xlsx(paste0(pathname, ".xlsx"), sheet = sheet.name)
   res <- na.omit(res)
   
   names(node.names) <- as.character(seq(0,length(node.names)-1),1)
